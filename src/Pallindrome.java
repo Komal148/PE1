@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Pallindrome {
 
-        public static int Palcheck(int num)
+        public static int PalCheck(int num)
         {
             int n=num;
             int r=0;
@@ -38,24 +38,24 @@ public class Pallindrome {
         }
         public static void main(String[] args) {
 
-            int palnum;
+            int palNum;
 
             System.out.println("Enter a number:");
             Scanner input = new Scanner(System.in);
 
-            palnum = input.nextInt();
+            palNum = input.nextInt();
 
-            if (Palcheck(palnum) == 1) {
-                if (Sum(palnum) == 1) {
+            if (PalCheck(palNum) == 1) {
+                if (Sum(palNum) == 1) {
                     System.out.println("hello");
-                    System.out.println(palnum + " is a palindrome and sum of even number is more than 25.");
+                    System.out.println(palNum + " is a palindrome and sum of even number is more than 25.");
                 }
-                else if (Sum(palnum) == 2) {
-                    System.out.println(palnum + " is a palindrome and sum of even number is less than 25.");
+                else if (Sum(palNum) == 2) {
+                    System.out.println(palNum + " is a palindrome and sum of even number is less than 25.");
                 }
             }
             else {
-                System.out.println(palnum + " is not a pallindrome");
+                System.out.println(palNum + " is not a pallindrome");
             }
         }
 
