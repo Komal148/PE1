@@ -1,5 +1,19 @@
 import java.util.Scanner;
+/*
+ * %W% %E%
+Komal Rani
+ *
+ * Copyright (c) Komal Rani All rights reserved.
+ * This code has been solemnly made by Komal Rani
+ * Working In Boeing India Pvt. Ltd.
+ */
 
+/**
+ * This program that reads an unspecified number of integer arguments using
+ * Scanner Class and adds them together. The program should display total of
+ * the given input number and should only consider integer value.The program
+ * should display an error message if there are any non integer values
+ */
 public class UnspecSum {
     public static void main(String[] args) {
         int num;

@@ -16,7 +16,7 @@ Komal Rani
 import java.util.Scanner;
 
 public class SortNum {
-    static void Sort(int arr[],int n)
+    static void sort(int arr[],int n)
     {
         int temp;
 
@@ -33,7 +33,7 @@ public class SortNum {
             }
         }
     }
-    static void SortDigits(int num )
+    static void sortDigits(int num )
     {
         String str=Integer.toString(num) ;
         int len= str.length();
@@ -52,7 +52,7 @@ public class SortNum {
             n = n/10;
         }
 
-        Sort(arr,len);  /*Sort Method */
+        sort(arr,len);  /*Sort Method */
         System.out.println("Sorted Number is non-decreasing order");
         for( i=0; i<len ;i++ )
         {
@@ -65,7 +65,7 @@ public class SortNum {
         int num;
         Scanner input=new Scanner(System.in);
         num=input.nextInt();
-        SortDigits(num); /*Method arrange digits in an array */
+        sortDigits(num); /*Method arrange digits in an array */
 
         int sum=0;
         //System.out.println(sum);

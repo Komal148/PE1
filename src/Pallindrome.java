@@ -1,9 +1,24 @@
+/*
+ * %W% %E%
+Komal Rani
+ *
+ * Copyright (c) Komal Rani All rights reserved.
+ * This code has been solemnly made by Komal Rani
+ * Working In Boeing India Pvt. Ltd.
+ */
+
+/**
+ * This Program which accepts a number as input and check whether the given
+ number is palindrome or not If it is a palindrome then
+ a. Add all the even numbers and check whether the sum is more than 25.
+ b. Print success and failure messages for all 3 conditions
+ */
 import java.util.Scanner;
 
 
 public class Pallindrome {
 
-        public static int palCheck(int num)
+        public static int palCheck(int num) /*Checking whether it is a pallindrome or not*/
         {
             int n=num;
             int r=0;
@@ -19,7 +34,7 @@ public class Pallindrome {
 
             return 0;
         }
-        public static int sum(int n)
+        public static int sum(int n) /*evaluating Sum */
         {
             int sum=0;
             while( (n%10) != 0 )
