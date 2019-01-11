@@ -1,40 +1,34 @@
-/*
- * %W% %E%
-Komal Rani
- *
- * Copyright (c) Komal Rani All rights reserved.
- * This code has been solemnly made by Komal Rani
- * Working In Boeing India Pvt. Ltd.
- */
-
 /**
  * This Program which accepts a number as input and check whether the given
  number is palindrome or not If it is a palindrome then
- a. Add all the even numbers and check whether the sum is more than 25.
+ a. Add all the even numbers and check whether the computeSum is more than 25.
  b. Print success and failure messages for all 3 conditions
  */
+package com.stackroute.PE1;
+
 import java.util.Scanner;
 
 
 public class Pallindrome {
 
-        public static int palCheck(int num) /*Checking whether it is a pallindrome or not*/
+        public static int pallindromeCheck(int number) /*Checking whether it is a pallindrome or not*/
         {
-            int n=num;
+            int n=number;
             int r=0;
-            int rem;
+            int remainder;
             while( n!=0 )
             {
-               rem=n%10;
-               r=r*10+rem;
+               remainder=n%10;
+               r=r*10+remainder;
                n=n/10;
             }
-            if( num == r )
+            if( number == r )
                 return 1;
 
             return 0;
         }
-        public static int sum(int n) /*evaluating Sum */
+
+        public static int computeSum(int n) /*evaluating Sum */
         {
             int sum=0;
             while( (n%10) != 0 )
@@ -51,26 +45,27 @@ public class Pallindrome {
             else
                 return 2;
         }
+
         public static void main(String[] args) {
 
-            int palNum;
+            int pallindromeNumber;
 
             System.out.println("Enter a number:");
             Scanner input = new Scanner(System.in);
 
-            palNum = input.nextInt();
+            pallindromeNumber = input.nextInt();
 
-            if (palCheck(palNum) == 1) {
-                if (sum(palNum) == 1) {
+            if (pallindromeCheck(pallindromeNumber) == 1) {
+                if (computeSum(pallindromeNumber) == 1) {
                     System.out.println("hello");
-                    System.out.println(palNum + " is a palindrome and sum of even number is more than 25.");
+                    System.out.println(pallindromeNumber + " is a palindrome and computeSum of even number is more than 25.");
                 }
-                else if (sum(palNum) == 2) {
-                    System.out.println(palNum + " is a palindrome and sum of even number is less than 25.");
+                else if (computeSum(pallindromeNumber) == 2) {
+                    System.out.println(pallindromeNumber + " is a palindrome and computeSum of even number is less than 25.");
                 }
             }
             else {
-                System.out.println(palNum + " is not a pallindrome");
+                System.out.println(pallindromeNumber + " is not a pallindrome");
             }
         }
 

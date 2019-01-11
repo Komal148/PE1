@@ -1,18 +1,11 @@
-/*
- * %W% %E%
-Komal Rani
- *
- * Copyright (c) Komal Rani All rights reserved.
- * This code has been solemnly made by Komal Rani
- * Working In Boeing India Pvt. Ltd.
- */
-
 /**
  * This Program is about
  * a. sort the number in non-increasing order
- * b. after sorting sum all the even numbers, the sum should be greater than 15 .
- * c. if sum is more than 15,then print output as true or false.
+ * b. after sorting computeSum all the even numbers, the computeSum should be greater than 15 .
+ * c. if computeSum is more than 15,then print output as true or false.
  */
+package com.stackroute.PE1;
+
 import java.util.Scanner;
 
 public class SortNum {
@@ -40,7 +33,7 @@ public class SortNum {
         /**
          * Defining an array for the integer values
          */
-        int arr[] = new int[len];
+        int numberArray[] = new int[len];
         int k;
         int i=0;
         int n=num;
@@ -48,15 +41,15 @@ public class SortNum {
         while( n != 0)
         {
             k = n%10;
-            arr[i++]=k;
+            numberArray[i++]=k;
             n = n/10;
         }
 
-        sort(arr,len);  /*Sort Method */
+        sort(numberArray,len);  /*Sort Method */
         System.out.println("Sorted Number is non-decreasing order");
         for( i=0; i<len ;i++ )
         {
-            System.out.print(arr[i]);
+            System.out.print(numberArray[i]);
         }
         System.out.println("\n");
     }
@@ -68,7 +61,6 @@ public class SortNum {
         sortDigits(num); /*Method arrange digits in an array */
 
         int sum=0;
-        //System.out.println(sum);
         while( num !=0 )
         {
             if( (num%10)%2 == 0 )
@@ -79,7 +71,7 @@ public class SortNum {
             }
             num=num/10;
         }
-        System.out.println("sum = "+sum);
+        System.out.println("computeSum = "+sum);
         if( sum > 15)
         {
             System.out.println("True");

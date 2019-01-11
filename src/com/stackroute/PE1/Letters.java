@@ -1,35 +1,28 @@
-/*
- * %W% %E%
-Komal Rani
- *
- * Copyright (c) Komal Rani All rights reserved.
- * This code has been solemnly made by Komal Rani
- * Working In Boeing India Pvt. Ltd.
- */
-
 /**
  * This Program is about
  * a. sort the number in non-increasing order
- * b. after sorting sum all the even numbers, the sum should be greater than 15 .
- * c. if sum is more than 15,then print output as true or false.
+ * b. after sorting computeSum all the even numbers, the computeSum should be greater than 15 .
+ * c. if computeSum is more than 15,then print output as true or false.
  */
+package com.stackroute.PE1;
+
 import java.util.Scanner;
 
 public class Letters {
 
     public static void main(String[] args) {
-        char c;
+        char charcter;
         Scanner input=new Scanner(System.in);
-        c =input.next().charAt(0);
-        if( c >=65 && c <= 90 )
+        charcter =input.next().charAt(0);
+        if( charcter >=65 && charcter <= 90 )
         {
             System.out.println("Capital Letter");
         }
-        else if( c >=97 && c <= 122 )
+        else if( charcter >=97 && charcter <= 122 )
         {
             System.out.println("Small Letter");
         }
-        else if( c >= 48 && c <= 57 )
+        else if( charcter >= 48 && charcter <= 57 )
         {
             System.out.println("Digit");
         }

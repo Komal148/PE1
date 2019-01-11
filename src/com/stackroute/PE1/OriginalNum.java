@@ -1,12 +1,3 @@
-/*
- * %W% %E%
-Komal Rani
- *
- * Copyright (c) Komal Rani All rights reserved.
- * This code has been solemnly made by Komal Rani
- * Working In Boeing India Pvt. Ltd.
- */
-
 /**
  * This Program which accepts a number from user as input
  * (set the limit say 1 - 50 or 1 - 100) User should guess
@@ -16,6 +7,8 @@ Komal Rani
  *     b. Number guessed is less than original number
  *     c. Number guessed matches the original number
  */
+package com.stackroute.PE1;
+
 import java.util.Scanner;
 
 public class OriginalNum {
